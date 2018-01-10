@@ -21,7 +21,7 @@
 
 //update log  1. modules setup!
 
-
+// budget controller
 var budgetController = (function(){
   var x = 1;
   var add = function(a){
@@ -35,18 +35,24 @@ var budgetController = (function(){
 
 })();
 
+
+
+// UI controller
 var UIController = (function(){
 
 })();
 
-var controller = (function(budgetCtrl, UICtrl){
-  var z = budgetCtrl.publicTest(5);
-  return{
-    anotherPublic: function(){
-      console.log(z);
-    }
-  }
 
+
+// global app controller
+var controller = (function(budgetCtrl, UICtrl){
+  document.querySelector('.add__btn').addEventListener('click', function(){
+    //1. get filed input
+    2. add item to budget controller 
+
+
+
+  });
 })(budgetController,UIController);
 
 //   :)
